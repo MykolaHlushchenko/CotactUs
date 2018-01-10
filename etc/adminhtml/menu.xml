@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+		<!-- create new admin menu ( left panel ) item -->
+		<add id="Smile_ContactMessage::smile_contact_menu"
+			 title="Smile Contact"
+			 translate="title"
+			 module="Smile_ContactMessage"
+			 sortOrder="90"
+			 dependsOnModule="Smile_ContactMessage"
+			 resource="Smile_ContactMessage::smile_contact_menu"/>
+
+		<!-- create SMILE MODULE admin menu TITLE -->
+		<add id="Smile_ContactMessage::smile_contact"
+			 title="Contacts"
+			 translate="title"
+			 module="Smile_ContactMessage"
+			 parent="Smile_ContactMessage::smile_contact_menu"
+			 sortOrder="10"
+			 resource="Smile_ContactMessage::smile_contact"/>
+
+		<!-- create admin menu item Messages -->
+		<add id="Smile_ContactMessage::smile_contact_messages"
+			 title="Messages"
+			 translate="title"
+			 sortOrder="20"
+			 module="Smile_ContactMessage"
+			 parent="Smile_ContactMessage::smile_contact"
+			 action="contact/message/index"
+			 dependsOnModule="Smile_ContactMessage"
+			 resource="Smile_ContactMessage::smile_contact_messages"/>
+    </menu>
+</config>

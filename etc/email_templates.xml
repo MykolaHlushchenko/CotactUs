@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:Magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="contact_message_template" label="Contact message email" file="message_answer_form.html" type="text" module="Smile_ContactMessage" area="adminhtml"/>
+</config>

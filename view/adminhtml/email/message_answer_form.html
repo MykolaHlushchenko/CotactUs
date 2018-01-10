@@ -1,0 +1,13 @@
+<!--@subject Message Contact Form@-->
+<!--@vars {
+"var data.user_name":"UserName",
+"var data.email":"Sender Email",
+"var data.text_message":"TextMessage"
+"var data.answer":"Answer"
+} @-->
+
+{{trans "Name: %name" name=$data.user_name}}
+{{trans "Email: %email" email=$data.email}}
+
+{{trans "Text Message: %message" message=$data.text_message}}
+{{trans "Answer: %answer" answer=$data.answer}}
